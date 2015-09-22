@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9778E5C1BB12165005A7997 /* MessagePackRPC.h in Headers */ = {isa = PBXBuildFile; fileRef = A9778E5B1BB12165005A7997 /* MessagePackRPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9778E631BB12165005A7997 /* MessagePackRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9778E581BB12165005A7997 /* MessagePackRPC.framework */; settings = {ASSET_TAGS = (); }; };
+		A9778E681BB12165005A7997 /* MessagePackRPCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9778E671BB12165005A7997 /* MessagePackRPCTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9778E641BB12165005A7997 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9778E4F1BB12165005A7997 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9778E571BB12165005A7997;
+			remoteInfo = MessagePackRPC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A9778E581BB12165005A7997 /* MessagePackRPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessagePackRPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9778E5B1BB12165005A7997 /* MessagePackRPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessagePackRPC.h; sourceTree = "<group>"; };
+		A9778E5D1BB12165005A7997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9778E621BB12165005A7997 /* MessagePackRPCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessagePackRPCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9778E671BB12165005A7997 /* MessagePackRPCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePackRPCTests.swift; sourceTree = "<group>"; };
+		A9778E691BB12165005A7997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9778E541BB12165005A7997 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9778E5F1BB12165005A7997 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9778E631BB12165005A7997 /* MessagePackRPC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9778E4E1BB12165005A7997 = {
+			isa = PBXGroup;
+			children = (
+				A9778E5A1BB12165005A7997 /* MessagePackRPC */,
+				A9778E661BB12165005A7997 /* MessagePackRPCTests */,
+				A9778E591BB12165005A7997 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9778E591BB12165005A7997 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9778E581BB12165005A7997 /* MessagePackRPC.framework */,
+				A9778E621BB12165005A7997 /* MessagePackRPCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9778E5A1BB12165005A7997 /* MessagePackRPC */ = {
+			isa = PBXGroup;
+			children = (
+				A9778E5B1BB12165005A7997 /* MessagePackRPC.h */,
+				A9778E5D1BB12165005A7997 /* Info.plist */,
+			);
+			path = MessagePackRPC;
+			sourceTree = "<group>";
+		};
+		A9778E661BB12165005A7997 /* MessagePackRPCTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9778E671BB12165005A7997 /* MessagePackRPCTests.swift */,
+				A9778E691BB12165005A7997 /* Info.plist */,
+			);
+			path = MessagePackRPCTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A9778E551BB12165005A7997 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9778E5C1BB12165005A7997 /* MessagePackRPC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A9778E571BB12165005A7997 /* MessagePackRPC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9778E6C1BB12165005A7997 /* Build configuration list for PBXNativeTarget "MessagePackRPC" */;
+			buildPhases = (
+				A9778E531BB12165005A7997 /* Sources */,
+				A9778E541BB12165005A7997 /* Frameworks */,
+				A9778E551BB12165005A7997 /* Headers */,
+				A9778E561BB12165005A7997 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessagePackRPC;
+			productName = MessagePackRPC;
+			productReference = A9778E581BB12165005A7997 /* MessagePackRPC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A9778E611BB12165005A7997 /* MessagePackRPCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9778E6F1BB12165005A7997 /* Build configuration list for PBXNativeTarget "MessagePackRPCTests" */;
+			buildPhases = (
+				A9778E5E1BB12165005A7997 /* Sources */,
+				A9778E5F1BB12165005A7997 /* Frameworks */,
+				A9778E601BB12165005A7997 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9778E651BB12165005A7997 /* PBXTargetDependency */,
+			);
+			name = MessagePackRPCTests;
+			productName = MessagePackRPCTests;
+			productReference = A9778E621BB12165005A7997 /* MessagePackRPCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9778E4F1BB12165005A7997 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = dictav;
+				TargetAttributes = {
+					A9778E571BB12165005A7997 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					A9778E611BB12165005A7997 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = A9778E521BB12165005A7997 /* Build configuration list for PBXProject "MessagePackRPC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A9778E4E1BB12165005A7997;
+			productRefGroup = A9778E591BB12165005A7997 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9778E571BB12165005A7997 /* MessagePackRPC */,
+				A9778E611BB12165005A7997 /* MessagePackRPCTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9778E561BB12165005A7997 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9778E601BB12165005A7997 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9778E531BB12165005A7997 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9778E5E1BB12165005A7997 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9778E681BB12165005A7997 /* MessagePackRPCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9778E651BB12165005A7997 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9778E571BB12165005A7997 /* MessagePackRPC */;
+			targetProxy = A9778E641BB12165005A7997 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A9778E6A1BB12165005A7997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A9778E6B1BB12165005A7997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A9778E6D1BB12165005A7997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MessagePackRPC/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dictav.MessagePackRPC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A9778E6E1BB12165005A7997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MessagePackRPC/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dictav.MessagePackRPC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A9778E701BB12165005A7997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MessagePackRPCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dictav.MessagePackRPCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A9778E711BB12165005A7997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MessagePackRPCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dictav.MessagePackRPCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9778E521BB12165005A7997 /* Build configuration list for PBXProject "MessagePackRPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9778E6A1BB12165005A7997 /* Debug */,
+				A9778E6B1BB12165005A7997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9778E6C1BB12165005A7997 /* Build configuration list for PBXNativeTarget "MessagePackRPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9778E6D1BB12165005A7997 /* Debug */,
+				A9778E6E1BB12165005A7997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A9778E6F1BB12165005A7997 /* Build configuration list for PBXNativeTarget "MessagePackRPCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9778E701BB12165005A7997 /* Debug */,
+				A9778E711BB12165005A7997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9778E4F1BB12165005A7997 /* Project object */;
+}
