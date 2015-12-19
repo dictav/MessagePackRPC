@@ -7,7 +7,8 @@
 //
 
 import XCTest
-@testable import MessagePackRPC
+import MessagePack
+import MessagePackRPC
 
 class MessagePackRPCTests: XCTestCase {
     
@@ -21,9 +22,41 @@ class MessagePackRPCTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testNeoVim() {
+        let task = NSTask()
+        task.launchPath = "/usr/local/bin/nvim"
+        task.arguments = ["-u", "NONE", "-N", "--embed"]
+        
+        let pipeA = NSPipe(), pipeB = NSPipe()
+        let writer = pipeA.fileHandleForWriting
+        let reader = pipeB.fileHandleForReading
+        task.standardInput  = pipeA
+        task.standardOutput = pipeB
+        task.launch()
+        defer {
+            task.terminate()
+        }
+        
+        let value = MessagePackValue.Array([
+            .UInt(0),
+            .UInt(1),
+            .String("vim_get_api_info"),
+            .Array([])
+            ])
+        let bytes = MessagePack.pack(value)
+        let data = NSData(bytes: bytes, length: bytes.count)
+        XCTAssertEqual(data.length, 21)
+        
+        writer.writeData(data)
+        let eof = NSData(bytes: [0xff], length: 1)
+        writer.writeData(eof) //send EOF
+        writer.closeFile() //send EOF
+        
+        let receivedData = reader.readDataToEndOfFile()
+        XCTAssert(receivedData.length > 0)
+        
+        let receivedValue = try? MessagePack.unpack(receivedData)
+        XCTAssertNotNil(receivedValue)
     }
     
     func testPerformanceExample() {

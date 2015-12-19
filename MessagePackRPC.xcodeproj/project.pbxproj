@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9035C2C1BB15CA8007AFAFE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9035C2B1BB15CA8007AFAFE /* Result.framework */; };
+		A9035C2D1BB16355007AFAFE /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A9035C2B1BB15CA8007AFAFE /* Result.framework */; };
+		A9035C2E1BB164A1007AFAFE /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9778E721BB121DA005A7997 /* Session.swift */; settings = {ASSET_TAGS = (); }; };
 		A9778E5C1BB12165005A7997 /* MessagePackRPC.h in Headers */ = {isa = PBXBuildFile; fileRef = A9778E5B1BB12165005A7997 /* MessagePackRPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9778E631BB12165005A7997 /* MessagePackRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9778E581BB12165005A7997 /* MessagePackRPC.framework */; settings = {ASSET_TAGS = (); }; };
-		A9778E681BB12165005A7997 /* MessagePackRPCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9778E671BB12165005A7997 /* MessagePackRPCTests.swift */; };
+		A9DD60691BB12DD60026BDA2 /* MessagePack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DD60681BB12DD60026BDA2 /* MessagePack.framework */; };
+		A9DD606B1BB12F210026BDA2 /* MessagePack.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A9DD60681BB12DD60026BDA2 /* MessagePack.framework */; };
+		A9DD606D1BB12F3F0026BDA2 /* MessagePackRPCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9778E671BB12165005A7997 /* MessagePackRPCTests.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,13 +27,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A9DD606A1BB12EF30026BDA2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				A9035C2D1BB16355007AFAFE /* Result.framework in CopyFiles */,
+				A9DD606B1BB12F210026BDA2 /* MessagePack.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A9035C2B1BB15CA8007AFAFE /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
 		A9778E581BB12165005A7997 /* MessagePackRPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessagePackRPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9778E5B1BB12165005A7997 /* MessagePackRPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessagePackRPC.h; sourceTree = "<group>"; };
 		A9778E5D1BB12165005A7997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9778E621BB12165005A7997 /* MessagePackRPCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessagePackRPCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9778E671BB12165005A7997 /* MessagePackRPCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePackRPCTests.swift; sourceTree = "<group>"; };
 		A9778E691BB12165005A7997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9778E721BB121DA005A7997 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		A9DD60681BB12DD60026BDA2 /* MessagePack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessagePack.framework; path = Carthage/Build/Mac/MessagePack.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9035C2C1BB15CA8007AFAFE /* Result.framework in Frameworks */,
+				A9DD60691BB12DD60026BDA2 /* MessagePack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +77,8 @@
 		A9778E4E1BB12165005A7997 = {
 			isa = PBXGroup;
 			children = (
+				A9035C2B1BB15CA8007AFAFE /* Result.framework */,
+				A9DD60681BB12DD60026BDA2 /* MessagePack.framework */,
 				A9778E5A1BB12165005A7997 /* MessagePackRPC */,
 				A9778E661BB12165005A7997 /* MessagePackRPCTests */,
 				A9778E591BB12165005A7997 /* Products */,
@@ -71,6 +97,7 @@
 		A9778E5A1BB12165005A7997 /* MessagePackRPC */ = {
 			isa = PBXGroup;
 			children = (
+				A9778E721BB121DA005A7997 /* Session.swift */,
 				A9778E5B1BB12165005A7997 /* MessagePackRPC.h */,
 				A9778E5D1BB12165005A7997 /* Info.plist */,
 			);
@@ -125,6 +152,7 @@
 				A9778E5E1BB12165005A7997 /* Sources */,
 				A9778E5F1BB12165005A7997 /* Frameworks */,
 				A9778E601BB12165005A7997 /* Resources */,
+				A9DD606A1BB12EF30026BDA2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -142,6 +170,7 @@
 		A9778E4F1BB12165005A7997 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = dictav;
 				TargetAttributes = {
@@ -193,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9035C2E1BB164A1007AFAFE /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9778E681BB12165005A7997 /* MessagePackRPCTests.swift in Sources */,
+				A9DD606D1BB12F3F0026BDA2 /* MessagePackRPCTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,11 +332,16 @@
 		A9778E6D1BB12165005A7997 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = MessagePackRPC/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -314,17 +349,23 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dictav.MessagePackRPC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		A9778E6E1BB12165005A7997 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = MessagePackRPC/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -339,6 +380,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = MessagePackRPCTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dictav.MessagePackRPCTests;
@@ -350,6 +395,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = MessagePackRPCTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dictav.MessagePackRPCTests;
@@ -376,6 +425,7 @@
 				A9778E6E1BB12165005A7997 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9778E6F1BB12165005A7997 /* Build configuration list for PBXNativeTarget "MessagePackRPCTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +434,7 @@
 				A9778E711BB12165005A7997 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
